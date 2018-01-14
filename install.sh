@@ -1,12 +1,12 @@
 #!/bin/bash
 ################################################################################
 # Original Author:   crombiecrunch
-# Current Author: manfromafar
-# Web:     yiimp.poolofd32th.club 
+# Current Author: GreeneTech
+# Web:     GreeneTech Mining 
 #
 # Program:
 #   Install yiimp on Ubuntu 16.04 running Nginx, MariaDB, and php7.x
-# BTC Donation: 18AwGT19befE4Z3siEiAzsF8n9MoJEifiH
+# BTC Donation: 1ACNkc4ipJNefTLTECNjNt5LmsK82jG6bm
 # 
 ################################################################################
 output() {
@@ -36,7 +36,7 @@ output ""
     read -e -p "Install LetsEncrypt SSL? IMPORTANT! You MUST have your domain name pointed to this server prior to running the script!! [Y/n]: " ssl_install
     
     clear 
-    output "If you found this helpful, please donate to BTC Donation: 18AwGT19befE4Z3siEiAzsF8n9MoJEifiH"
+    output "If you found this helpful, please donate to BTC Donation: 1ACNkc4ipJNefTLTECNjNt5LmsK82jG6bm
     output ""
     output "Updating system and installing required packages."
     output ""
@@ -685,7 +685,7 @@ define('"'"'EXCH_YOBIT_SECRET'"'"', '"'"''"'"');
 
     output "Database 'yiimpfrontend' and users 'panel' and 'stratum' created with password $password and $password2, will be saved for you"
     output ""
-    output "BTC Donation: 1KuE2LMZMPXJ4gsVniWLuyyPsqqZs5Av4y"
+    output "BTC Donation: 1ACNkc4ipJNefTLTECNjNt5LmsK82jG6bm"
     output ""
     
     output "Peforming the SQL import"
@@ -739,7 +739,7 @@ define('"'"'YIIMP_PUBLIC_EXPLORER'"'"', true);
 define('"'"'YIIMP_PUBLIC_BENCHMARK'"'"', false);
 define('"'"'YIIMP_FIAT_ALTERNATIVE'"'"', '"'"'USD'"'"'); // USD is main
 define('"'"'YAAMP_USE_NICEHASH_API'"'"', false);
-define('"'"'YAAMP_BTCADDRESS'"'"', '"'"'18AwGT19befE4Z3siEiAzsF8n9MoJEifiH'"'"');
+define('"'"'YAAMP_BTCADDRESS'"'"', '"'"'1ACNkc4ipJNefTLTECNjNt5LmsK82jG6bm'"'"');
 define('"'"'YAAMP_SITE_URL'"'"', '"'"''"${server_name}"''"'"');
 define('"'"'YAAMP_STRATUM_URL'"'"', YAAMP_SITE_URL); // change if your stratum server is on a different host
 define('"'"'YAAMP_SITE_NAME'"'"', '"'"'PoolofD32th'"'"');
@@ -773,7 +773,7 @@ define('"'"'NICEHASH_API_ID'"'"','"'"'9205'"'"');
 define('"'"'NICEHASH_DEPOSIT'"'"','"'"'3J9tapPoFCtouAZH7Th8HAPsD8aoykEHzk'"'"');
 define('"'"'NICEHASH_DEPOSIT_AMOUNT'"'"','"'"'0.01'"'"');
 $cold_wallet_table = array(
-	'"'"'18AwGT19befE4Z3siEiAzsF8n9MoJEifiH'"'"' => 0.10,
+	'"'"'1ACNkc4ipJNefTLTECNjNt5LmsK82jG6bm'"'"' => 0.10,
 );
 // Sample fixed pool fees
 $configFixedPoolFees = array(
@@ -819,7 +819,7 @@ sudo chmod -R 775 /var/web/yaamp/runtime
 sudo chmod -R 664 /root/backup/
 sudo chmod -R 644 /var/log/debug.log
 sudo chmod -R 775 /var/web/serverconfig.php
-sudo mv $HOME/yiimp/ $HOME/yiimp-install-only-do-not-run-commands-from-this-folder
+sudo mv $HOME/yiimp/ $HOME/yiimp-install
 sudo service nginx restart
 sudo service php7.0-fpm reload
 clear
@@ -829,4 +829,4 @@ output "Please make sure to change your wallet addresses in the /var/web/serverc
 output ""
 output "Please make sure to add your public and private keys."
 output ""
-output "If you found this script helpful please consider donating some BTC Donation: 18AwGT19befE4Z3siEiAzsF8n9MoJEifiH"
+output "If you found this script helpful please consider donating some BTC Donation: 1ACNkc4ipJNefTLTECNjNt5LmsK82jG6bm"
